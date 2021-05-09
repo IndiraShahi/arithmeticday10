@@ -15,4 +15,6 @@ output[p]="$p"
 output[q]="$q"
 output[r]="$r"
 output[s]="$s"
-echo "Results: " ${!output[@]}:${output[@]}
+echo "Results in Dict: " ${!output[@]}:${output[@]}
+arr=($p $q $q $r)
+echo "Results in Array: " ${arr[@]}
