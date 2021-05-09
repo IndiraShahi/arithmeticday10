@@ -8,3 +8,5 @@ q=$(echo $a $b $c | awk '{print $3+$1/$2}')
 echo "Second Number: $q"
 r=$(echo $a $b $c | awk '{print $1%$2+$3}')
 echo "Third Number: $r"
+s=$(echo $a $b $c | awk '{print $1*$b+$c}')
+echo "Fourth Number: $s"
