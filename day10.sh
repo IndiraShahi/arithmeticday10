@@ -10,3 +10,9 @@ r=$(echo $a $b $c | awk '{print $1%$2+$3}')
 echo "Third Number: $r"
 s=$(echo $a $b $c | awk '{print $1*$b+$c}')
 echo "Fourth Number: $s"
+declare -A output
+output[p]="$p"
+output[q]="$q"
+output[r]="$r"
+output[s]="$s"
+echo "Results: " ${!output[@]}:${output[@]}
