@@ -19,6 +19,10 @@ echo "Results in Dict: " ${!output[@]}:${output[@]}
 arr=($p $q $r $s)
 echo "Results in Array: " ${arr[@]}
 
-
+echo "In descending order"
 IFS=$'\n'
 echo "${arr[*]}" | sort -nr
+echo "In ascending order"
+IFS=$'\n'
+echo "${arr[*]}" | sort -n
+
