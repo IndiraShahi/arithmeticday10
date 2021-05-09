@@ -16,5 +16,9 @@ output[q]="$q"
 output[r]="$r"
 output[s]="$s"
 echo "Results in Dict: " ${!output[@]}:${output[@]}
-arr=($p $q $q $r)
+arr=($p $q $r $s)
 echo "Results in Array: " ${arr[@]}
+
+
+IFS=$'\n'
+echo "${arr[*]}" | sort -nr
